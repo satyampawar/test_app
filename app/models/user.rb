@@ -3,7 +3,7 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable,:omniauthable
-
+  has_many :payments
 def self.from_omniauth(auth)
     # @user ||= User.find_for_facebook_oauth(request.env["omniauth.auth"], current_user)
     # if !@user.persisted?
