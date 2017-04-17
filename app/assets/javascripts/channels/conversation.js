@@ -46,7 +46,7 @@ $(document).ready(function(){
         $('.new_message').trigger('reset');
     }
   });
-})
+});
 // $(document).on('submit', '.new_message', function(e) {
 //   e.preventDefault();
 
