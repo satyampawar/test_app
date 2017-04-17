@@ -23,10 +23,11 @@ gem 'coffee-rails', '~> 4.2'
 
 
 gem 'devise'
+gem 'dotenv-rails'
 gem 'omniauth-facebook','~>3.0.0'
 gem 'omniauth-twitter','~>0.0.17'
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
-
+gem 'stripe'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 

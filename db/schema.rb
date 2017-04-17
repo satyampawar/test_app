@@ -10,11 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20170417100402) do
+=======
+ActiveRecord::Schema.define(version: 20170417085128) do
+>>>>>>> 66f1a809cb53fff4484c88fcc6a091b1cd42da60
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+<<<<<<< HEAD
   create_table "conversations", force: :cascade do |t|
     t.integer  "recipient_id"
     t.integer  "sender_id"
@@ -38,6 +43,14 @@ ActiveRecord::Schema.define(version: 20170417100402) do
   create_table "payments", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+=======
+  create_table "payments", force: :cascade do |t|
+    t.integer  "user_id"
+    t.decimal  "amount"
+    t.string   "description"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+>>>>>>> 66f1a809cb53fff4484c88fcc6a091b1cd42da60
   end
 
   create_table "users", force: :cascade do |t|
