@@ -36,7 +36,9 @@ ul {
   padding: 10px;
   float: right;
 }
-
+.toggle-window{
+  color: white;
+}
 
 .message-received {
   background-color: #F1F0F0;

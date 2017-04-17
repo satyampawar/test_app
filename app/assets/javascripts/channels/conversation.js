@@ -37,14 +37,14 @@ App.conversation = App.cable.subscriptions.create("ConversationChannel", {
 });
 
 
-$(document).ready(function(){
-  $('.new_message textarea').on('keydown', function(e) {
-    if (e.which == 13) {
+ $(document).ready(function(){
+   $('.new_message textarea').on('keydown', function(e) {
+   if (e.which == 13) {
         e.preventDefault();
-        var values = $('.new_message').serializeArray();
-        App.conversation.speak(values);
-        $('.new_message').trigger('reset');
-    }
+         var values = $(this).closest('form').serializeArray();
+       App.conversation.speak(values);
+        $(this).closest('form').trigger('reset');
+     }
   });
 });
 // $(document).on('submit', '.new_message', function(e) {
