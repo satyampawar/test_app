@@ -1,0 +1,12 @@
+<table>
+<tr>
+	<td>user id</td>
+	<td>amount</td>
+</tr>
+<% @payments.each do |payment|%>
+<tr>
+  <td><%=payment.user.first_name%></td>
+  <td><%=payment.amount%></td>
+</tr>
+<%end%>
+</table>

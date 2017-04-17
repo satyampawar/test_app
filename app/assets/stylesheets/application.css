@@ -25,7 +25,9 @@ ul {
   overflow-x: hidden;
 }
 
-
+.panel-heading{
+  background: #428bca !important;
+}
 .message-sent {
   position: relative;
   background-color: #D9EDF7;
